@@ -1,0 +1,56 @@
+/*navbar css*/
+
+.navbar-default{
+    margin-top: 0px;
+    background-color: white;
+}
+
+/*navbar logout button*/
+
+.logout{
+  
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+body {
+    background-color: white;
+    
+    font-family: 'Lobster', cursive;
+    /*padding-top:80px; */
+}
+
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+#cart {
+    float: right;
+}
+
+body { padding:40px;  }
+
+/*item size*/
+.item-img{
+    
+    width: 350px;
+    height: 150px;
+}
+
+.price{
+    color: red;
+    
+}
+/*add to cart font bold*/
+
+.add-to-cart{
+    font-weight: bold;
+}
