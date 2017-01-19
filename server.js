@@ -15,10 +15,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 
-var configDB = require('./config/database.js');
+var configDB;
+    if (!process.env.DATABASE_URI) configDB = require('./config/database.js');
+
+var databaseUrl = process.env.DATABASE_URI || configDB;
 
 // configuration ===============================================================
-mongoose.connect(configDB.url); // connect to our database
+mongoose.connect(databaseUrl.url); // connect to our database
 
 require('./config/passport')(passport); // pass passport for configuration
 
