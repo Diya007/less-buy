@@ -28,6 +28,8 @@ $(document).ready(function() {
     $(".add-to-cart").on("click", function() {
         var id = $(this).attr('data-id'); 
         //console.log(id)
+        toastr.success('Item add to cart successfully')
+        
         var data = {
             id: id,
             //qty: data.qty
@@ -44,8 +46,6 @@ $(document).ready(function() {
     $(".delete-item").on("click", function() { 
         var self = $(this);
         var id = self.attr('data-id'); 
-        
-      
         var data= {
             id:id
         }
