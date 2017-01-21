@@ -2,14 +2,6 @@
 <html>
 <head><% include ./parts/head %></head>
 
-<ul>
-        <li>
-            <a href="/logout" class="btn btn-info btn-lg">
-                <span class="glyphicon glyphicon-log-out"></span> Log out
-            </a>
-        </li>
-</ul>
-
     <div class="container">
     	<h1>Shopping Cart</h1><hr>
     	<table class="table table-striped table-hover table-bordered">
@@ -23,8 +15,6 @@
                 </tr>
                 
                 <!-- if statement to check if cartItems.length -->
-                
-               
                 
                 <% for (var i = 0; i < cartItems.length; i++) { %>
                    
@@ -61,9 +51,7 @@
           
     </div>
     
-    <form>
-      
-    </form> 
+ 
 
 <footer> <% include ./parts/footer %></footer>
 </body>
