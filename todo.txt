@@ -1,28 +1,14 @@
 
-shopping cart old format
-<div class="container" style="margin-top:50px;">
-    	<div class="row shopping-cart-list list">
-            <% for (var i = 0; i < cartItems.length; i++) { %>
-                <div class="shopping-cart-item what">
-                    <%- cartItems[i].title %><br>
-                    <%- cartItems[i].qty %>
-                    <i class="fa fa-shopping-cart "></i>
-                    <a data-id=<%- cartItems[i].id %> class="hidden-sm delete-item button">Delete item</a>
-                    
-                </div>
-            <% } %>
-            
-    	</div>
-</div>
+you should delete .env file from your repo (edited)
 
+[11:01]  
+and I believe your heroku will stop working (edited)
 
+[11:01]  
+you need to make a function or IF statement to tell your app to look at the process.env in heroku when .env is not available
 
- if(!(itemId in user.local.cart)){
-                    user.local.cart.push(itemId);
-                } else{
-                    items[itemId].qty = items[itemId].qty +1;
-                    items[itemId].price = items[itemId].qty * items[itemId].price;
-                }
-                
-    we are working on the user model, however the else statement works on the item model, if there are 2 users ,
-    items model will be confused, dirty data.
+Hi Diya, so what I remember we did last was move the config file out of .gitignore, 
+create a new config directory and put passport.js and database.js in the config directory.  
+The database and server have to point to the same place, otherwise Heroku won't deploy it. 
+Look inside my passport.js and database.js and make sure all your configuration are set up the same
+ https://github.com/lily-sf888/my-chakra/tree/master/config

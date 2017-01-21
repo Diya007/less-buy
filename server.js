@@ -1,4 +1,3 @@
-// server.js
 
 // set up ======================================================================
 // get all the tools we need
@@ -32,7 +31,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('view engine', 'ejs'); // set up ejs for templating
 
-
 // required for passport
 app.use(session({
     secret: 'ilovescotchscotchyscotchscotch', // session secret
@@ -44,7 +42,7 @@ app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
-require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./app/routes.js')(app, passport); 
 
 // launch ======================================================================
 app.listen(port);
