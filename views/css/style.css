@@ -1,54 +1,71 @@
-/*navbar css*/
-.navbar-default{
-    margin-top: 0px;
-    background-color: white;
-}
-
-/*navbar logout button*/
-.logout{
-  
-    padding: 10px;
-    margin: 10px;
-    float: right;
-}
-
-body {
-    background-color: white;
-    
-    font-family: 'Lobster', cursive;
-    /*padding-top:80px; */
-}
-
-  
-ul {
+ul.topnav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 0 40px;
+    overflow: hidden;
+    background-color: #333;
 }
 
-li {
-    display: inline;
+ul.topnav li {
+    float: left;
 }
 
-#cart {
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    font-size:20px;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li.cart, ul.topnav li.right {
     float: right;
 }
 
-body { padding:40px;  }
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}  
+
+/*dash board, sign up, login page*/
+.consistant-body {
+    background-image: url("http://roguehealthandfitness.com/wp-content/uploads/2015/02/organic.jpg");
+    font-family: 'Lato', sans-serif;
+}
+
+/*dash board container*/
+.jumbotron, .login, .signup {
+    position:absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    background-color: rgba(194, 204, 173, 0.68);
+}
+
+/*item page, item line space*/
+.col-sm-6 {
+    margin-top:3%;
+    padding:10px;
+}
+
+.profile-container { 
+    /*margin-top:5%;*/
+    background-color:white;
+    padding-left:5%;
+    padding-right:5%;  
+}
 
 /*item size*/
 .item-img{
-    
-    width: 350px;
-    height: 150px;
+    width: 300px;
+    height: 180px;
 }
 
-.price{
-    color: red;
-    
-}
 /*add to cart font bold*/
-
-.add-to-cart{
+#item,.add-to-cart{
     font-weight: bold;
 }

@@ -2,11 +2,10 @@
 <html>
 <head><% include ./parts/head %></head>
 
-<body>
+<body class="consistant-body">
     <div class="container">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-sm-6 col-sm-offset-3 login">
             <h1><span></span> Login</h1>
-        
             <% if (message.length > 0) { %>
                 <div class="alert alert-danger"><%= message %></div>
             <% } %>

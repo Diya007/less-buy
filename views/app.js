@@ -28,7 +28,7 @@ $(document).ready(function() {
     $(".add-to-cart").on("click", function() {
         var id = $(this).attr('data-id'); 
         //console.log(id)
-        toastr.success('Item add to cart successfully')
+        toastr.success("Item add to cart successfully")
         
         var data = {
             id: id,
@@ -63,9 +63,7 @@ $(document).ready(function() {
             }
             
             if(user.local.cart)  {
-            
                 var item = user.local.cart[id];
-                
                 if(item) {
                     var newPrice = item.price * item.qty;
                     self.closest('tr').find('.price').html(newPrice);
