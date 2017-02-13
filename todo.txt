@@ -12,3 +12,12 @@ create a new config directory and put passport.js and database.js in the config 
 The database and server have to point to the same place, otherwise Heroku won't deploy it. 
 Look inside my passport.js and database.js and make sure all your configuration are set up the same
  https://github.com/lily-sf888/my-chakra/tree/master/config
+ 
+ 
+ 加入购物车时箭头变成手
+ 
+ 加入购物车成功 toastr放在左边
+ 
+ 变成resPonsive时， shopping cart 对不齐
+ 
+ 

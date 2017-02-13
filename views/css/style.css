@@ -15,7 +15,7 @@ ul.topnav li a {
     color: white;
     text-align: center;
     padding: 20px 16px;
-    font-size:20px;
+    font-size:35px;
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -26,15 +26,16 @@ ul.topnav li.cart, ul.topnav li.right {
     float: right;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
 }  
 
 /*dash board, sign up, login page*/
 .consistant-body {
-    background-image: url("http://roguehealthandfitness.com/wp-content/uploads/2015/02/organic.jpg");
+    background-image: url("http://organicbeautytalk.com/wp-content/uploads/2014/07/organic-beauty-talk-green-detox-smoothie-cleanse.jpg");
     font-family: 'Lato', sans-serif;
+    background-size: cover;
 }
 
 /*dash board container*/
@@ -42,7 +43,7 @@ ul.topnav li.cart, ul.topnav li.right {
     position:absolute;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: rgba(194, 204, 173, 0.68);
 }
 
