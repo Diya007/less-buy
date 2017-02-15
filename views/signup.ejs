@@ -7,13 +7,13 @@
 <body class="consistant-body">
     <div class="container">
         <div class="col-sm-6 col-sm-offset-3 signup">
-            <h1><span></span> Signup</h1>
+            <h1><span>Signup</span></h1>
         
             <% if (message.length > 0) { %>
                 <div class="alert alert-danger"><%= message %></div>
             <% } %>
         
-            <!-- LOGIN FORM -->
+            <!-- Signup FORM -->
             <form action="/signup" method="post">
                 <div class="form-group">
                     <label>Username</label>
@@ -26,9 +26,7 @@
         
                 <button type="submit" class="btn btn-warning btn-lg">Signup</button>
             </form>
-        
-            <hr>
-        
+            <!--<hr>-->
             <p>Already have an account? <a href="/login">Login</a></p>
             <p>Or go <a href="/">home</a>.</p>
         

@@ -33,20 +33,38 @@ ul.topnav li.cart, ul.topnav li.right {
 
 /*dash board, sign up, login page*/
 .consistant-body {
-    background-image: url("http://organicbeautytalk.com/wp-content/uploads/2014/07/organic-beauty-talk-green-detox-smoothie-cleanse.jpg");
+    background-image: url("../imgs/background.jpg");
     font-family: 'Lato', sans-serif;
     background-size: cover;
 }
 
 /*dash board container*/
-.jumbotron, .login, .signup {
-    position:absolute;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
+.jumbotron {
+    /*position:absolute;*/
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right:25%;
     background-color: rgba(194, 204, 173, 0.68);
 }
 
+.login, .signup {
+    margin-left: 25%;
+    margin-right:25%;
+    background-color: rgba(194, 204, 173, 0.68);
+}
+
+h1, .form-group {
+    padding-left:30px;
+    padding-right:30px;
+}
+
+button{
+    margin-left: 30px
+}
+
+p{
+    text-align: center;
+}
 /*item page, item line space*/
 .col-sm-6 {
     margin-top:3%;
