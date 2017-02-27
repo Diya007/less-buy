@@ -1,7 +1,9 @@
 <% for (var item in items ) { %>
 <!--from this you can see item is a variable in items object -->
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="gallery">
+        
         <div class="col-item">
+            
             <div class="post-img-content">
                 <img src="<%- items[item].img %>" style="width:350;height:260" class="img-responsive item-img" />
                 
@@ -15,6 +17,7 @@
                 </span>
 
             </div>
+            
             <div class="info">
                 <div class="separator clear-left">
                     <p class="btn-add">
@@ -22,6 +25,8 @@
                       
                 </div>
             </div>
+            
         </div>
+        
     </div>
 <% } %>

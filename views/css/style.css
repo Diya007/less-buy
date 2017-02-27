@@ -178,7 +178,6 @@ div.img-container img {
 
 
 .signup-container, .login-container {
-    /*outline: 1px solid red;*/
     position: relative;
     margin: 10% auto;
     width: 35%;
@@ -189,7 +188,7 @@ div.img-container img {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 
-.signup-container h1, .signup-container p, .login-container h1, .login-container p {
+.signup-container h3, .signup-container p, .login-container h3, .login-container p {
     text-align: center;
     color: #757575;
     font-weight: 300;
@@ -222,6 +221,8 @@ input:hover {
     background-color: #58c791;
     border: none;
 }
+
+
 
 /*dash board, sign up, login page*/
 /*.background {*/

@@ -1,39 +1,35 @@
+
 <!doctype html>
 <html>
+<head><% include ./parts/head %></head>
+<nav>
+</nav>
 
-<% include ./parts/head %>
-
-    <body class="signup-body">
+<body class="signup-body">
+    <div class="signup-container">
+        <div class="signup">
+            <h3><span>Create an account</span></h3>
         
-        <!--<div class="backImg"></div>-->
+            <% if (message.length > 0) { %>
+                <div class="alert alert-danger"><%= message %></div>
+            <% } %>
         
-        <!--<header><% include ./parts/header %></header>-->
+            <!-- Signup FORM -->
+            <form action="/signup" method="post">
+                <div class="form-input">
+                    <input type="text"  name="email" placeholder="What's your username?">
+                </div>
+                <div class="form-password">
+                    <input type="password" name="password" placeholder="choose a password">
+                </div>
         
-        <div class="signup-container">
-            <div class="signup">
-                <h1><span>Create an account</span></h1>
-          
-                <% if (message.length > 0) { %>
-                    <div class="alert alert-danger"><%= message %></div>
-                <% } %>
-            
-                <form action="/signup" method="post">
-                    
-                    <div class="form-input">
-                        <input type="text"  placeholder="What's your username?" name="email">
-                    </div>
-                    
-                    <div class="form-password">
-                        <input type="password"  placeholder="Choose a password" name="password">
-                    </div>
-            
-                    <button type="submit" class="submit-button">Signup</button>
-                </form>
-    
-                <p>Already have an account? <a href="/login">Login</a></p>
-                <p>Or go <a href="/">home</a></p>
-            
-            </div>
+                <button type="submit" class="submit-button">Signup</button>
+            </form>
+            <!--<hr>-->
+            <p>Already have an account? <a href="/login">Login</a></p>
+            <p>Or go <a href="/">home</a>.</p>
+        
         </div>
-    </body>
+    </div>
+</body>
 </html>
