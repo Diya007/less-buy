@@ -1,18 +1,81 @@
 <!doctype html>
 <html>
-
-<head><% include ./parts/head %></head>
-
-<body class="consistant-body">
-    <div class="container">
-        <div class="jumbotron text-center">
-            <h1><span></span>LessBuy</h1>
-            <h2>An Organic life style</h2>
-            <p>Login or Register with:</p>
-            <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
-            <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
-        </div>
-    </div>
-</body>
-
+    
+    <head>
+        <title>LessBuy</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    
+    <body>
+        <div class="background"></div>
+        <header><% include ./parts/header %></header>
+            
+       <section class="title">
+           <div class="container">
+               <p>EAT FRESH</p>
+               <p class="subtitle">AN ORGANIC LIFE STYLE</p>
+           </div>
+       </section>
+       
+       <section class="strip">
+           <div class="container">
+            <nav class="stripNav">  
+               <ul>
+                    <a href="#"><li class="nav-hover">SHOW ME</li></a>
+                    <a href="#"><li class="nav-hover">PEOPLE</li></a>
+    				<a href="#"><li class="nav-hover">&</li></a>
+        			<a href="/signup"><li class="nav-hover">SECRET</li></a>
+        			<a href="/login"><li class="nav-hover">RECIPE</li></a>
+    			</ul>
+    		<nav class="navbar">
+           </div>
+       </section>
+       
+       <section class="display">
+           <div class="container">
+               <div class="gallery">
+                    <ul>
+                        <li class="pic1">
+                            <div class="img-container">
+                                <img class="image" src="https://static.pexels.com/photos/332090/pexels-photo-332090.jpeg">
+                                <div class="img-hover">
+                                    <img src="https://static.pexels.com/photos/5938/food-salad-healthy-lunch.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="pic2">
+                            <div class="img-container">
+                                <img class="image" src="http://greatist.com/sites/default/files/friends-dinner-party.jpg">
+                                <div class="img-hover">
+                                    <img src="https://static.pexels.com/photos/29682/pexels-photo-29682.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="pic3">
+                            <div class="img-container">
+                                <img class="image" src="https://static.pexels.com/photos/40064/theme-candid-portraits-smile-woman-girl-40064.jpeg">
+                                <div class="img-hover">
+                                    <img src="https://static.pexels.com/photos/5317/food-salad-restaurant-person.jpg">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="footer">
+                        <p><i class="fa fa-copyright "></i> Diya Zhao 2017</p>
+                    </div>
+               </div>
+           </div>
+            
+       </section>
+       
+    </body>
 </html>

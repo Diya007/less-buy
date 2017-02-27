@@ -1,36 +1,39 @@
 <!doctype html>
 <html>
-<head><% include ./parts/head %></head>
-<nav>
-</nav>
 
-<body class="consistant-body">
-    <div class="container">
-        <div class="col-sm-6 col-sm-offset-3 signup">
-            <h1><span>Signup</span></h1>
+<% include ./parts/head %>
+
+    <body class="signup-body">
         
-            <% if (message.length > 0) { %>
-                <div class="alert alert-danger"><%= message %></div>
-            <% } %>
+        <!--<div class="backImg"></div>-->
         
-            <!-- Signup FORM -->
-            <form action="/signup" method="post">
-                <div class="form-group">
-                    <label>Username</label>
-                    <input type="text" class="form-control" name="email">
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" name="password">
-                </div>
+        <!--<header><% include ./parts/header %></header>-->
         
-                <button type="submit" class="btn btn-warning btn-lg">Signup</button>
-            </form>
-            <!--<hr>-->
-            <p>Already have an account? <a href="/login">Login</a></p>
-            <p>Or go <a href="/">home</a>.</p>
-        
+        <div class="signup-container">
+            <div class="signup">
+                <h1><span>Create an account</span></h1>
+          
+                <% if (message.length > 0) { %>
+                    <div class="alert alert-danger"><%= message %></div>
+                <% } %>
+            
+                <form action="/signup" method="post">
+                    
+                    <div class="form-input">
+                        <input type="text"  placeholder="What's your username?" name="email">
+                    </div>
+                    
+                    <div class="form-password">
+                        <input type="password"  placeholder="Choose a password" name="password">
+                    </div>
+            
+                    <button type="submit" class="submit-button">Signup</button>
+                </form>
+    
+                <p>Already have an account? <a href="/login">Login</a></p>
+                <p>Or go <a href="/">home</a></p>
+            
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,57 +1,256 @@
-ul.topnav {
-    list-style-type: none;
-    padding: 0 40px;
-    overflow: hidden;
-    background-color: #333;
-}
 
-ul.topnav li {
-    float: left;
-}
-
-
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 16px;
-    font-size:35px;
-}
-
-ul.topnav li a:hover:not(.active) {
-    background-color: #111;
-}
-
-ul.topnav li.cart, ul.topnav li.right {
-    float: right;
-}
-
-@media screen and (max-width: 800px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-}  
-
-/*dash board, sign up, login page*/
-.consistant-body {
-    background-image: url("../imgs/background.jpg");
-    font-family: 'Lato', sans-serif;
+/*-----------------------background--------------------------*/
+.background {
+    background-image: url("https://static.pexels.com/photos/139374/pexels-photo-139374.jpeg");
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background-size: cover;
 }
 
-/*dash board container*/
-.jumbotron {
-    /*position:absolute;*/
-    margin-top: 30px;
-    margin-left: 25%;
-    margin-right:25%;
-    background-color: rgba(194, 204, 173, 0.68);
+/*-----------------------nav ul--------------------------*/
+.navbar {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 2;
+  background: #fff;
+  /*outline: 2px solid red;*/
 }
 
-.login, .signup {
-    margin-left: 25%;
-    margin-right:25%;
-    background-color: rgba(194, 204, 173, 0.68);
+nav a {
+  text-decoration: none;
+  color:inherit;
 }
+
+nav ul {
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+  padding:0;
+  color:#582d95;
+  letter-spacing: .5px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 18px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+nav ul .nav-hover:hover {
+  color: #33929f;
+}
+
+
+.nav-right {
+position: static;
+}
+
+.nav-right {
+  position: relative;
+  left: 90px;
+}
+
+/*-----------------media query add here--------------------*/
+ 
+
+
+
+/*-----------------title section--------------------*/
+.title, .display, .strip {
+    position: relative;
+    z-index: 1;
+}
+
+section.title div.container {
+	padding: 15% 0;
+	text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(253, 251, 248);
+    text-shadow: 2px 2px #131111;
+}
+
+section.title div.container .subtitle {
+    font-size: 40px;
+}
+/*-----------------strip section--------------------*/
+section.strip div.container {
+    /*height: 80px;*/
+    width: 100%;
+    /*margin-bottom: 2%;*/
+	background: rgba(14, 85, 85, 0.63);
+}
+
+.stripNav {
+  top:0;
+  left:0;
+  right:0;
+  z-index: 2;
+  /*outline: 2px solid red;*/
+}
+
+.stripNav ul {
+    color: white;
+}
+
+.stripNav ul .nav-hover:hover {
+    color: #cfa015;
+}
+
+
+/*-----------------display section--------------------*/
+section.display div.container {
+    width: 100%;
+    background: white;    /* For browsers that do not support gradients */
+    background: linear-gradient(rgba(59, 37, 72, 0.84), rgb(241, 241, 241)); /* Standard syntax (must be last) */
+}
+
+.gallery {
+    text-align: center;
+}
+.gallery ul {
+    display: inline-block;
+    margin: 3% 0 3% 0;
+    /*outline: 2px solid red;*/
+    text-align: center;
+}
+
+.gallery ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.img-container {
+    width: 350px;
+	height: 250px;
+	display: block;
+	position: relative;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.95);
+}
+
+div.img-container img {
+	width: 350px;
+	height: 250px;
+}
+
+.img-hover{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    
+}
+
+.img-container:hover .img-hover {
+    bottom: 0;
+    height: 100%;
+}
+/*-----------------footer--------------------*/
+
+.footer {
+    font-size: 20px;
+    color: #582d95;
+}
+
+/*------------------signup form & login----------------*/
+
+.signup-body, .login-body {
+    background-image: url("https://static.pexels.com/photos/60470/night-studio-color-minimalism-60470.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+
+.signup-container, .login-container {
+    /*outline: 1px solid red;*/
+    position: relative;
+    margin: 10% auto;
+    width: 35%;
+    padding: 33px 25px 29px;
+    background: white;
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.signup-container h1, .signup-container p, .login-container h1, .login-container p {
+    text-align: center;
+    color: #757575;
+    font-weight: 300;
+}
+
+input {
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: #58c791 !important;
+}
+input:hover {
+    border-bottom-color: #dcdcdc;
+}
+.submit-button {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    display: block;
+    margin: 30px auto 30px;
+    color: white;
+    background-color: #58c791;
+    border: none;
+}
+
+/*dash board, sign up, login page*/
+/*.background {*/
+/*    background-image: url("https://static.pexels.com/photos/139374/pexels-photo-139374.jpeg");*/
+    /*font-family: 'Lato', sans-serif;*/
+/*    position: fixed;*/
+/*    z-index: 0;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    background-size: cover;*/
+/*}*/
+
+
+/*dash board container*/
+/*.jumbotron {*/
+    /*position:absolute;*/
+/*    margin-top: 30px;*/
+/*    margin-left: 25%;*/
+/*    margin-right:25%;*/
+/*    background-color: rgba(194, 204, 173, 0.68);*/
+/*}*/
+
+/*.login, .signup {*/
+/*    margin-left: 25%;*/
+/*    margin-right:25%;*/
+/*    background-color: rgba(194, 204, 173, 0.68);*/
+/*}*/
 
 h1, .form-group {
     padding-left:30px;
