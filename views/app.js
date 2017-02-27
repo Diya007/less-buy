@@ -25,9 +25,11 @@ $(document).ready(function() {
     
     showEmptyCartMessage()
     
-    $(".add-to-cart").on("click", function() {
+    console.log("hello world")
+    
+    $(".profile-container").on("click",".add-to-cart", function() {
         var id = $(this).attr('data-id'); 
-        //console.log(id)
+        console.log("add to cart",id)
         toastr.success("Item add to cart successfully")
         
         var data = {
