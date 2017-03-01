@@ -1,57 +1,57 @@
 <!doctype html>
 <html>
-<head><% include ./parts/head %></head>
-
-    <div class="container">
-    	<h1>Shopping Cart</h1><hr>
-    	<table class="table table-striped table-hover table-bordered">
-            <tbody>
- 
-                <tr>
-                    <th>Item</th>
-                    <th>QTY</th>
-                    <th>Unit Price</th>
-                    <th>Total Price</th>
-                </tr>
-                
-                <!-- if statement to check if cartItems.length -->
-                
-                <% for (var i = 0; i < cartItems.length; i++) { %>
-                    <div>
-                        <tr class='cart-items'>
-                            <td><%- cartItems[i].title %></td>
-                            <td class = 'qty'><%- cartItems[i].qty %></td>
-                            <td><a data-qty=<%- cartItems[i].qty %> data-id=<%- cartItems[i].id %> class="delete-item">Delete item</a></td>
-                            <td class='price price-totals'><%- cartItems[i].price * cartItems[i].qty %></td>
-                         </tr> 
-                     </div>
-                <% } %>
-                
-               
-                <tr class='no-items-in-cart'>
-                    <td>Add something into your cart!</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            
-                
-                <tr>
-                    <th colspan="3"><span class="pull-right">Total Price</span></th>
-                    <th class = "grossPrice">0 </th>
-                </tr>
-                
-                <tr>
-                    <td><a href="/profile" class="btn btn-primary">Continue Shopping</a></td>
-                    <td colspan="3"><a href="#" id = "checkout" class="pull-right btn btn-success">Checkout</a></td>
-                </tr>
-                
-            </tbody>
-        </table>          
-          
-    </div>
     
- 
-
-<footer> <% include ./parts/footer %></footer>
-</body>
+    <head><% include ./parts/head %></head>
+    
+    <body>
+        <header>
+            <% include ./parts/cart-header %>
+        </header>
+        
+        <div class="cart-container">
+        	<h1>Shopping Cart</h1><hr>
+        	<table class="table table-striped table-hover table-bordered">
+                <tbody>
+     
+                    <tr>
+                        <th>Item</th>
+                        <th>QTY</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                    
+                    <% for (var i = 0; i < cartItems.length; i++) { %>
+                        <div>
+                            <tr class='cart-items'>
+                                <td><%- cartItems[i].title %></td>
+                                <td class = 'qty'><%- cartItems[i].qty %></td>
+                                <td><a data-qty=<%- cartItems[i].qty %> data-id=<%- cartItems[i].id %> class="delete-item">Delete item</a></td>
+                                <td class='price price-totals'><%- cartItems[i].price * cartItems[i].qty %></td>
+                             </tr> 
+                         </div>
+                    <% } %>
+                   
+                    <tr class='no-items-in-cart'>
+                        <td>Add something into your cart!</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="3"><span class="pull-right">Total Price</span></th>
+                        <th class = "grossPrice">0 </th>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href="/profile" class="btn btn-primary">Continue Shopping</a></td>
+                        <td colspan="3"><a href="#" id = "checkout" class="pull-right btn btn-success">Checkout</a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>          
+        </div>
+    
+        <footer> <% include ./parts/footer %></footer>
+        
+    </body>
 </html>
