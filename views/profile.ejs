@@ -1,15 +1,19 @@
 <!doctype html>
 <html>
-<head><% include ./parts/profile-head %></head>
+<head><% include ./parts/head %></head>
  
 <body>
-    <div class="profile-container">
-    	<div class="row">
-            <% include ./parts/profile-template %>
-    	</div>
+    <header>
+        <% include ./parts/item-header %>
+    </header>
+    
+    <div class="shopping-container">
+        <% include ./parts/items %>
     </div>
     
+    
 <footer> <% include ./parts/footer %></footer>
+
 </body>
 
 </html>

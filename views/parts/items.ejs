@@ -1,29 +1,31 @@
 <% for (var item in items ) { %>
-<!--from this you can see item is a variable in items object -->
-    <div class="gallery">
-        
-        <div class="col-item">
-            
-            <div class="post-img-content">
-                <img src="<%- items[item].img %>" style="width:350;height:260" class="img-responsive item-img" />
-                
-                <span class="post-title" id = 'item'>   
-                    <%- items[item].title %><br>
-                    <!--item is a variable in items object-->
-                </span>
-                
-                 <span class="price">   
-                    Price: <%- items[item].price %>
-                </span>
 
-            </div>
+    <div class="item-container">
+        
+        <div class="item">
             
-            <div class="info">
-                <div class="separator clear-left">
-                    <p class="btn-add">
-                        <i class="fa fa-shopping-cart"></i><a data-id=<%- items[item].id %> class="add-to-cart">Add to cart</a></p>
-                      
+            <div class="item-img">
+                <img src="<%- items[item].img %>" />
+                
+                <div class="item-overlay">
+                    <div class="click-to-add">
+                        <p>
+                            <a data-id=<%- items[item].id %> class="add-to-cart"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
                 </div>
+                
+                <div class="item-info">
+                    <span class="item-title">   
+                        <%- items[item].title %><br>
+                        <!--item is a variable in items object-->
+                    </span>
+                    
+                    <span class="item-price">   
+                        <i class="fa fa-usd" aria-hidden="true"></i><%- items[item].price %>
+                    </span>
+                </div>
+                
             </div>
             
         </div>

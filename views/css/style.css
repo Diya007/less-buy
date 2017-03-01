@@ -1,7 +1,7 @@
 
 /*-----------------------background--------------------------*/
 .background {
-    background-image: url("https://static.pexels.com/photos/139374/pexels-photo-139374.jpeg");
+    background-image: url("../imgs/lessbuy-background.jpeg");
     position: fixed;
     z-index: 0;
     top: 0;
@@ -22,12 +22,12 @@
   /*outline: 2px solid red;*/
 }
 
-nav a {
+.nav a {
   text-decoration: none;
   color:inherit;
 }
 
-nav ul {
+.nav {
   overflow: hidden;
   text-align: center;
   margin: 0;
@@ -35,6 +35,8 @@ nav ul {
   color:#582d95;
   letter-spacing: .5px;
 }
+
+
 
 nav ul li {
   display: inline-block;
@@ -44,7 +46,7 @@ nav ul li {
   transition: 0.3s ease;
 }
 
-nav ul .nav-hover:hover {
+.nav .nav-hover:hover {
   color: #33929f;
 }
 
@@ -94,7 +96,6 @@ section.strip div.container {
   left:0;
   right:0;
   z-index: 2;
-  /*outline: 2px solid red;*/
 }
 
 .stripNav ul {
@@ -133,7 +134,8 @@ section.display div.container {
 	height: 250px;
 	display: block;
 	position: relative;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.95);
+	/*box-shadow: 0 3px 5px rgba(0, 0, 0, 0.95);*/
+	box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 1);
 }
 
 div.img-container img {
@@ -167,7 +169,7 @@ div.img-container img {
 /*------------------signup form & login----------------*/
 
 .signup-body, .login-body {
-    background-image: url("https://static.pexels.com/photos/60470/night-studio-color-minimalism-60470.jpeg");
+    background-image: url("../imgs/signup-background.jpeg");
     background-size: cover;
     width: 100%;
     height: 90%;
@@ -223,11 +225,104 @@ input:hover {
 }
 
 /*-------------item shopping page--------------*/
+.item-container { 
+    padding-left:5%;
+    padding-right:5%;  
+}
+.item {
+    display: inline-block;
+}
+
+/*------------------single item container-------------------*/
+
+.item-navbar {
+    background-color: #319f52;
+    color: white;
+}
+.item-nav a {
+     color: white;
+}
+
+.item-nav .nav-hover:hover {
+    color: #E1781D;
+}
+
+.shopping-container {
+	text-align: center;
+	text-decoration: none;
+	margin-top: 6%;
+	margin-bottom: 5%;
+}
+
+
+.item-container {
+    display: inline-block;
+	padding: 4% 2% 2% 2%;
+	/*outline: 2px dotted green;*/
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .shopping-container {
+        margin-top: 12%; 
+    }
+    .item-container {
+	    padding: 4% 2% 4% 2%;
+	   
+    }
+}
+
+.item-img {
+	width: 280px;
+	height: 220px;
+	position: relative;
+	float: left;
+	box-shadow: 1px 1px 20px 2px rgb(23, 53, 32);
+	/*outline: 2px dotted red;*/
+}
+.item-img img {
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.61);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.click-to-add {
+    white-space: nowrap; 
+    color: #319f52;
+    font-size: 45px;
+    position: absolute;
+    overflow: hidden;
+    top: 35%;
+    left: 44%;
+}
+
+.click-to-add a {
+    color: inherit;
+}
+
+.item-img:hover .item-overlay {
+  height: 100%;
+}
+
 .add-to-cart {
     cursor: pointer;
 }
 
-
+/*--------------price and descrpiton-------------------- */
+.item-info {
+    padding: 3%;
+}
 
 
 
@@ -265,38 +360,38 @@ input:hover {
 /*    background-color: rgba(194, 204, 173, 0.68);*/
 /*}*/
 
-h1, .form-group {
-    padding-left:30px;
-    padding-right:30px;
-}
+/*h1, .form-group {*/
+/*    padding-left:30px;*/
+/*    padding-right:30px;*/
+/*}*/
 
-button{
-    margin-left: 30px
-}
+/*button{*/
+/*    margin-left: 30px*/
+/*}*/
 
-p{
-    text-align: center;
-}
+/*p{*/
+/*    text-align: center;*/
+/*}*/
 /*item page, item line space*/
-.col-sm-6 {
-    margin-top:3%;
-    padding:10px;
-}
+/*.col-sm-6 {*/
+/*    margin-top:3%;*/
+/*    padding:10px;*/
+/*}*/
 
-.profile-container { 
+/*.profile-container { */
     /*margin-top:5%;*/
-    background-color:white;
-    padding-left:5%;
-    padding-right:5%;  
-}
+/*    background-color:white;*/
+/*    padding-left:5%;*/
+/*    padding-right:5%;  */
+/*}*/
 
 /*item size*/
-.item-img{
-    width: 300px;
-    height: 180px;
-}
+/*.item-img{*/
+/*    width: 300px;*/
+/*    height: 180px;*/
+/*}*/
 
-/*add to cart font bold*/
+
 #item,.add-to-cart{
     font-weight: bold;
 }
