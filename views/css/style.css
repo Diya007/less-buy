@@ -57,7 +57,7 @@ position: static;
 
 .nav-right {
   position: relative;
-  left: 90px;
+  /*left: 25%;*/
 }
 
 /*-----------------media query add here--------------------*/
@@ -250,8 +250,13 @@ input:hover {
     background-color: #319f52;
     color: white;
 }
+
+/*.item-nav {*/
+/*    float: right;*/
+/*}*/
 .item-nav a {
      color: white;
+     /*float: left;*/
 }
 
 .item-nav .nav-hover:hover {
@@ -329,5 +334,4 @@ input:hover {
 .delete-item {
     cursor: pointer;
 }
-
 
