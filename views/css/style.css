@@ -327,6 +327,16 @@ input:hover {
     padding: 3%;
 }
 
+.item-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /*------------------shopping cart-------------------------- */
 .cart-container {
     margin: 10%;

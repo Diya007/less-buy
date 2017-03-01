@@ -4,7 +4,7 @@ module.exports = {
         img:  'http://thehealthology.com/wp-content/uploads/2016/09/Kale1-800x449.jpg',
         desc: 'this is the description',
         title: 'Kale',
-        price: 4.,
+        price: 4.5,
         qty:1
         
     },
@@ -75,13 +75,5 @@ module.exports = {
         qty:1
     },
     
-    9: {
-        id: 9,
-        img:  'https://media.mnn.com/assets/images/2016/08/Figs-Half-Figs-Wooden-Table.jpg.653x0_q80_crop-smart.jpg',
-        desc: 'this is the description',
-        title: 'Fig',
-        price: 2,
-        qty:1
-    },
     
 }
