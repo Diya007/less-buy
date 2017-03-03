@@ -5,12 +5,11 @@ $(document).ready(function() {
         var prices = $('.price-totals')
         prices.each(function(price) {
             var priceString = prices[price];
+        
             total += parseFloat((priceString).innerText);
             console.log(total.toFixed(2))
         })
         $('.grossPrice').html(total.toFixed(2));
-       
-        console.log((Math.round(total * 100) / 100).toFixed(2))
       
     }
     totalPrice()

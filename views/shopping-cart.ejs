@@ -26,7 +26,7 @@
                                 <td><%- cartItems[i].title %></td>
                                 <td class = 'qty'><%- cartItems[i].qty %></td>
                                 <td><a data-qty=<%- cartItems[i].qty %> data-id=<%- cartItems[i].id %> class="delete-item">Delete item</a></td>
-                                <td class='price price-totals'><%- cartItems[i].price * cartItems[i].qty %></td>
+                                <td class='price price-totals'><%- (cartItems[i].price * cartItems[i].qty).toFixed(2) %></td>
                              </tr> 
                          </div>
                     <% } %>

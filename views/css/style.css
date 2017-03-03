@@ -36,8 +36,6 @@
   letter-spacing: .5px;
 }
 
-
-
 nav ul li {
   display: inline-block;
   padding: 18px 15px;
@@ -60,9 +58,45 @@ position: static;
   /*left: 25%;*/
 }
 
+.icon {
+  display: none;
+}
+
 /*-----------------media query add here--------------------*/
  
+@media screen and (max-width: 720px){
+    /*ul.nav li:not(:first-child) {*/
+    /*    display: none;*/
+    /*}*/
+    .nav-left {
+        display: none;
+    }
+    .nav-right {
+        float: left;
+    }
 
+    .icon {
+        display: inline-block;
+    }
+     
+    ul.nav.responsive {
+		position: relative;
+	}
+	
+	.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.nav.responsive a {
+		float: none;
+		display: inline;
+	}
+	ul.nav.responsive a {
+        display: block;
+        text-align: center;
+	}
+}
 
 
 /*-----------------title section--------------------*/
