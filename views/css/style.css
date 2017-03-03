@@ -300,6 +300,7 @@ input:hover {
   height: 0;
   transition: .5s ease;
 }
+
 .click-to-add {
     white-space: nowrap; 
     color: #319f52;
