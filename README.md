@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lessbuy #
 [Lessbuy](https://lessbuy.herokuapp.com/) is a full-functional shopping App, it allows user to login, sign up, add items into shopping cart and checkout!
 
@@ -36,3 +37,6 @@ Then open localhost:8080 in a browser
 
 
 
+=======
+
+>>>>>>> modified readme
