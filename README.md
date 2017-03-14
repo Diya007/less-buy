@@ -9,7 +9,7 @@
 - JavaScript
 - jQuery
 - Ajax
-## Back End #3
+## Back End ##
 - Node.js + Express.js (web server)
 - MongoDB (database)
 - Mongoose
