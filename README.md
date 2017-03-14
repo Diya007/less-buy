@@ -27,7 +27,12 @@
 
 # Getting started #
 ## Install ##
-
+git clone https://github.com/Diya007/less-buy.git
+cd lessbuy
+npm install
+## Launch ##
+node server.js
+Then open localhost:8080 in a browser
 
 
 
