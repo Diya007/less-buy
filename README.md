@@ -1,6 +1,6 @@
 # Lessbuy #
 [Lessbuy](https://lessbuy.herokuapp.com/) is a full-functional shopping App, it allows user to login, sign up, add items into shopping cart and checkout!
-
+![lessbuy](https://cloud.githubusercontent.com/assets/17839996/23920983/171efe70-08ba-11e7-9e06-a725d8183f74.jpg)
 # Technology #
 ## Front End ##
 - HTML5
