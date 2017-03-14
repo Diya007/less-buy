@@ -3,9 +3,6 @@
 
 ![](./views/background.jpg)
 
-# About #
-[Lessbuy](https://lessbuy.herokuapp.com/) is a full-functional shopping app which provides organic vegetables and fruits. We aim seek the finest natural and organic foods, add to that the excitement and fun we bring to shopping for groceries.
-
 # Technology #
 ## Front End ##
 - HTML5
